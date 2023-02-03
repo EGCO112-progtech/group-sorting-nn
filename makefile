@@ -1,12 +1,12 @@
 compile: main.c 
-	 gcc  main.c -o bubble
+	 gcc  main.c -o selection
 
 runSelection: selection
 	  ./selection
 
-run: bubble
-	 ./bubble
+run: selection
+	 ./selection
 
+clean: selection
+	 rm selection
 
-clean: bubble
-	 rm bubble

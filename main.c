@@ -21,6 +21,7 @@ int main(int argc, char *argv[]) {
   } else if (!strcmp(argv[1], "selection")) {
     display(a, n);
     selection(a, n);
+    printf("\n");
     display(a, n);
   }
 

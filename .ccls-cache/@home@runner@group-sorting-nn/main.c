@@ -1,10 +1,10 @@
 
-#include "sorting.h"
 #include <math.h>
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
 
+#include "sorting.h"
 int main(int argc, char *argv[]) {
   int *a, n = argc - 2;
   a = (int *)malloc(sizeof(int) * n);
@@ -21,6 +21,7 @@ int main(int argc, char *argv[]) {
   } else if (!strcmp(argv[1], "selection")) {
     display(a, n);
     selection(a, n);
+    printf("\n");
     display(a, n);
   }
 

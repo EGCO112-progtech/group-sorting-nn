@@ -1,4 +1,5 @@
 // selection sort function module in C
+#include <stdio.h>
 
 void display(int a[], int n) {
 
@@ -48,6 +49,7 @@ void insertion(int a[], int n) {
     display(a, n);
     printf("\n");
   }
+  printf("\n");
 }
 
 void bubblesort(int a[], int n) {

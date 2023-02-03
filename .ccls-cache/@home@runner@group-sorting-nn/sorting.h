@@ -49,6 +49,7 @@ void insertion(int a[], int n) {
     display(a, n);
     printf("\n");
   }
+  printf("\n");
 }
 
 void bubblesort(int a[], int n) {

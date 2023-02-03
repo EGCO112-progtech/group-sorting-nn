@@ -9,6 +9,7 @@ void display(int a[], int n) {
   printf("\n");
 }
 
+
 void swap(int *a, int *b) {
   int temp;
   temp = *a;
@@ -57,6 +58,23 @@ void bubbleSort(int a[], int n) {
   int i, j;
   int sorted;
   // how may pair to compare?
+
+  for (i = 0; i < n - 1; i++) {
+    sorted = 0;
+    for (j = 0; j < n - 1 - i; j++) {
+      if (a[j] < a[j + 1]) {
+        swap(&a[j], &a[j + 1]);
+        sorted = 1;
+      }
+      display(a, n);
+      
+    }
+    if (sorted == 0)
+      break;
+     printf("\n");
+  }
+ printf("\n");
+
   for (j = 1; j <= n - 1; j++) {
 
     display(a, n);

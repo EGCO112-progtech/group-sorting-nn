@@ -6,6 +6,7 @@
 #include <string.h>
 
 
+
 int main(int argc, char *argv[]) {
   int *a, n = argc-2 ;
   a = (int *)malloc(sizeof(int) * n);

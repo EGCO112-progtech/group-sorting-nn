@@ -1,13 +1,12 @@
 compile: main.c 
-	 gcc  main.c -o insertion
+	 gcc  main.c -o selection
 
 runSelection: selection
 	  ./selection
 
-run: insertion
-	 ./insertion
+run: selection
+	 ./selection
 
-
-clean: insertion
-	 rm insertion
+clean: selection
+	 rm selection
 

@@ -9,6 +9,13 @@ void display(int a[], int n) {
   printf("\n");
 }
 
+void swap(int *a, int *b) {
+  int temp;
+  temp = *a;
+  *a = *b;
+  *b = temp;
+}
+
 void selectionSort(int a[], int n) {
   int i, j, m = a[0], mi = 0;
   for (i = j + 1; i < n; i++) {
@@ -26,8 +33,6 @@ void selectionSort(int a[], int n) {
   }
 }
 
-display(data, length);
-}
 
 void insertion(int a[], int n) {
   int i, j;
@@ -46,12 +51,6 @@ void insertion(int a[], int n) {
   }
 }
 
-void swap(int *a, int *b) {
-  int temp;
-  temp = *a;
-  *a = *b;
-  *b = temp;
-}
 
 void bubbleSort(int a[], int n) {
 

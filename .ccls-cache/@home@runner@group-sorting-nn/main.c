@@ -1,10 +1,8 @@
-
 #include "sorting.h"
 #include <math.h>
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
-
 
 int main(int argc, char *argv[]) {
   int *a, n = argc-2 ;
@@ -26,6 +24,5 @@ int main(int argc, char *argv[]) {
    selection(a,n);
    display(a,n);
  }
-
  return 0;
 }
